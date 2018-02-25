@@ -16,14 +16,11 @@ $(document).ready(function() {
 
     var displayQuote = function() {
         $(".quote-button").on("click", function() {
-            $(".result").innerHTML = pickedQuote;
+            $(".result").append( `${pickedQuote}`);
 
         });
 
     };
-
-
-
   pickAQuote();
   displayQuote();
 });
